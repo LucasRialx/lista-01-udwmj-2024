@@ -11,11 +11,11 @@ Este script em Node.js calcula o imposto devido com base em transações de comp
 
 1. **Clone o Repositório ou Baixe o Script**
 
-   Clone o repositório ou baixe o arquivo `calculoIR.js`.
+   Clone o repositório ou baixe o arquivo `CryptoTxCalculator.js`.
 
 2. **Instale o Pacote `prompt-sync`**
 
-   No diretório onde o arquivo `calculoIR.js` está localizado, execute o seguinte comando para instalar o pacote `prompt-sync`:
+   No diretório onde o arquivo `CryptoTxCalculator.js` está localizado, execute o seguinte comando para instalar o pacote `prompt-sync`:
 
    npm install prompt-sync
    
@@ -40,6 +40,8 @@ Bem-vindo ao calculador de imposto para transações de criptomoedas!
 Qual foi o valor total da venda de criptomoedas? 10000
 Qual foi o custo total das criptomoedas compradas? 7000
 O imposto devido sobre o lucro é: R$ 450.00
+
+Observação: Em caso de prejuizo na operação, vai aparecer uma mensagem para o usuario identificando que o mesmo não teria imposto a pagar.
 
 ##Configuração da Taxa de Imposto
 A taxa de imposto é atualmente configurada como 15% no script. Para ajustar essa taxa, modifique o valor da variável taxaImposto no arquivo calculoIR.js.
