@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Imposto - Criptomoedas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Calculator</h1>
+        <form id="tax-form">
+            <label for="rendaBruta">Valor de venda:</label>
+            <input type="number" id="rendaBruta" placeholder="Digite o valor" required>
+            
+            <label for="custo">Valor de Compra:</label>
+            <input type="number" id="custo" placeholder="Digite o custo" required>
+            
+            <button type="button" onclick="calcularImposto()">Calcular</button>
+        </form>
+        <div id="resultado" class="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
