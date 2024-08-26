@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-image: url('imagens/wallpaper.jpg'); /* Caminho para sua imagem */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(17, 17, 17, 0.4); /* Cor escura com 80% de opacidade */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+
+h1 {
+    color: rgb(255, 249, 249); /* Cor do texto (branco claro) */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 
+        1px 1px 0 #000,   /* Sombra superior esquerda */
+        -1px -1px 0 #000, /* Sombra inferior direita */
+        1px -1px 0 #000,  /* Sombra superior direita */
+        -1px 1px 0 #000;  /* Sombra inferior esquerda */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d00;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
