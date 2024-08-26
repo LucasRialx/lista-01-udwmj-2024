@@ -19,7 +19,7 @@ Este script em Node.js calcula o imposto devido com base em transações de comp
 
    npm install prompt-sync
    
-##Como Usar
+## Como Usar
 
 Execute o Script
 No terminal, navegue até o diretório onde o arquivo calculoIR.js está localizado e execute o script com o comando:
@@ -34,7 +34,7 @@ O valor total da venda de criptomoedas.
 O custo total das criptomoedas compradas.
 Após fornecer essas informações, o script calculará e exibirá o imposto devido com base na taxa de imposto definida (atualmente configurada como 15%).
 
-##Exemplo de Saída
+## Exemplo de Saída
 
 Bem-vindo ao calculador de imposto para transações de criptomoedas!
 Qual foi o valor total da venda de criptomoedas? 10000
@@ -43,15 +43,16 @@ O imposto devido sobre o lucro é: R$ 450.00
 
 Observação: Em caso de prejuizo na operação, vai aparecer uma mensagem para o usuario identificando que o mesmo não teria imposto a pagar.
 
-##Configuração da Taxa de Imposto
+## Configuração da Taxa de Imposto
 A taxa de imposto é atualmente configurada como 15% no script. Para ajustar essa taxa, modifique o valor da variável taxaImposto no arquivo calculoIR.js.
 
 const taxaImposto = 0.15; // Ajuste o valor conforme necessário
 
-##Contribuições
+## Contribuições
 Se você quiser contribuir para melhorar este script, sinta-se à vontade para abrir uma pull request ou relatar problemas.
 
-##Autor
+## Autor
 Lucas Rial
-##Licença
+
+## Licença
 Este projeto está licenciado sob a MIT License.
