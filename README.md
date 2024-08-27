@@ -64,8 +64,6 @@ Qual foi o custo total das criptomoedas compradas? 7000
 O imposto devido sobre o lucro é: R$ 450.00
 Observação: Em caso de prejuízo na operação, uma mensagem será exibida indicando que não há imposto a pagar.
 ```
-### Versão Web
-O resultado será exibido diretamente na página após o cálculo.
 
 ### Configuração da Taxa de Imposto
 A taxa de imposto é atualmente configurada como 15%. Para ajustar essa taxa:
