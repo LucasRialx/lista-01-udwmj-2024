@@ -1,29 +1,31 @@
-const prompt = require('prompt-sync')();
+// Função para calcular o imposto devido
+function calcularImposto() {
+    // Obter valores dos campos de entrada
+    const rendaBruta = parseFloat(document.getElementById('rendaBruta').value);
+    const custo = parseFloat(document.getElementById('custo').value);
 
-// Função para calcular o imposto devido.
-function calcularImposto(rendaBruta, custo, taxaImposto) {
+    // Verificar se os valores inseridos são válidos
+    if (isNaN(rendaBruta) || isNaN(custo)) {
+        alert('Por favor, insira valores válidos.');
+        return;
+    }
+
+    // Calcular lucro
     const lucro = rendaBruta - custo;
+
+    // Definir taxa de imposto (15%)
+    const taxaImposto = 0.15;
+
+    // Calcular o imposto devido com base no lucro
     const impostoDevido = lucro > 0 ? lucro * taxaImposto : 0;
-    return impostoDevido;
-}
 
-// Solicita as informações para o usuário.
-console.log("Bem-vindo ao calculador de imposto para transações de criptomoedas!");
+    // Selecionar o elemento de resultado
+    const resultadoDiv = document.getElementById('resultado');
 
-// As perguntas para o usuário.
-const rendaBruta = parseFloat(prompt('Qual foi o valor total da venda de criptomoedas? '));
-const custo = parseFloat(prompt('Qual foi o custo total das criptomoedas compradas? '));
-
-// Taxa de imposto, neste caso vou tratar apenas a alíquota de 15%.
-const taxaImposto = 0.15;
-
-// Calculando o imposto que será pago pela movimentação.
-const impostoDevido = calcularImposto(rendaBruta, custo, taxaImposto);
-const lucro = rendaBruta - custo;
-
-// Exibindo o resultado com base no lucro.
-if (lucro > 0) {
-    console.log(`O imposto devido sobre o lucro é: R$ ${impostoDevido.toFixed(2)}`);
-} else {
-    console.log('Você teve um prejuízo. Não há imposto a pagar.');
+    // Exibir o resultado
+    if (lucro > 0) {
+        resultadoDiv.textContent = `O imposto devido sobre o lucro é: R$ ${impostoDevido.toFixed(2)}`;
+    } else {
+        resultadoDiv.textContent = 'Você teve um prejuízo. Não há imposto a pagar.';
+    }
 }
